@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+includer.jsp에서 지정한 번호 : <%= number %>
+<p>
+	<%
+		String dataFolder = "c:\\data";
+	%>
+</p>
+<%-- 06행 includee.jspf를 포함하는 JSP는 dataFolder 변수를 사용할 수 있다. --%>

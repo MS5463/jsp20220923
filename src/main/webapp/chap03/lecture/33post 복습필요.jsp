@@ -10,6 +10,7 @@
 	<h1>전송방식(method) : post</h1>
 	<p>길이의 제한이 없음</p>
 	<p>주소란에 노출되지 않음</p>
+	<p>본문에 붙어서 간다</p>
 	
 	<form action="" method="post">
 		이름 : <input type="text" name="name"> <br>
