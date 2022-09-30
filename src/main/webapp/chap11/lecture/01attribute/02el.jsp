@@ -5,9 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>02el</title>
 </head>
 <body>
-
+	<%-- 여기에 attribute를 추가하는 코드를 작성 --%>
+	<%
+	request.setAttribute("myattr2", "java");
+	%>
+	
+	<p>${myattr2}</p><%-- java 라고 출력된다. --%>
 </body>
 </html>

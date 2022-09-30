@@ -5,9 +5,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>01list</title>
 </head>
 <body>
-
+	<%
+	java.util.List<String> list = java.util.List.of("java", "css", "spring");
+	request.setAttribute("attr1", list);
+	%>
+	
+	<p>${attr1[0]}</p>
+	<p>${attr1[1]}</p>
+	<p>${attr1[2]}</p>
 </body>
 </html>
