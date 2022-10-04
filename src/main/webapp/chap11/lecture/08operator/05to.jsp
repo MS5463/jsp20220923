@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>05to</title>
 </head>
 <body>
 	<p>${param.num1 + param.num2}</p>

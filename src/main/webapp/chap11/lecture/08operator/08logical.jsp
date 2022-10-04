@@ -21,7 +21,7 @@
 	
 	<hr>
 	
-	<h4>||, not</h4>
+	<h4>||, or</h4>
 	<p>${true || true}</p>
 	<p>${true || false}</p>
 	<p>${false || true}</p>

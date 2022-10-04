@@ -1,19 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>05from</title>
+<title>03from</title>
 </head>
 <body>
-	<form action="05to.jsp" method="post">
-		<%-- 여기에 적절한 input 요소들 작성 --%>
-		<input type="text" name="num1">
-		<input type="text" name="num2">
-		<input type="text" name="num3">
-		<input type="text" name="num4">
+	<%-- form 요소 작성 03to.jsp로 서브밋 되도록 --%>
+	<form action="03to.jsp">
+		<input type="text" name="address">
 		<input type="submit" value="전송">
+	</form>
 </body>
 </html>

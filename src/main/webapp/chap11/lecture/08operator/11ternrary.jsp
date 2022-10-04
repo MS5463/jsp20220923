@@ -5,15 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>10empty</title>
+<title>11ternary</title>
 </head>
 <body>
-	<%
-	pageContext.setAttribute("attr1", "");
-	pageContext.setAttribute("attr2", "java");
-	%>
+	<%-- 262P 비교 선택 연산자 --%>
+	<h3>삼항연산자</h3>
 	
-	<p>${not empty attr1}</p>
-	<p>${not empty attr2}</p>
+	<p>${true ? 1 : 2}</p>
+	<p>${false ? 1 : 2}</p>
 </body>
 </html>

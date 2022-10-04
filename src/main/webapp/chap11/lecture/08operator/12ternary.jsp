@@ -5,15 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>10empty</title>
+<title>12ternary</title>
 </head>
 <body>
-	<%
-	pageContext.setAttribute("attr1", "");
-	pageContext.setAttribute("attr2", "java");
-	%>
-	
-	<p>${not empty attr1}</p>
-	<p>${not empty attr2}</p>
+	<h3>${empty param.name ? "guest" : param.name}님 반갑습니다.</h3>
 </body>
 </html>

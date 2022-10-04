@@ -1,19 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>10empty</title>
+<title>08forEach</title>
 </head>
 <body>
-	<%
-	pageContext.setAttribute("attr1", "");
-	pageContext.setAttribute("attr2", "java");
-	%>
+	<%-- 08forEach?left=1&right=5 --%>
 	
-	<p>${not empty attr1}</p>
-	<p>${not empty attr2}</p>
+	<c:forEach begin="${param.left}" end="${param.right}" var="x">
+		<p>${x}</p>
+	</c:forEach>
 </body>
 </html>
