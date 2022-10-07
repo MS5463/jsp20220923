@@ -15,7 +15,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>스크립트릿에서 선언부 사용하기</title>
+<title>스크립트릿에서 선언부 사용하기</title> 
 </head>
 <body>
 
