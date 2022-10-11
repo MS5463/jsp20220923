@@ -1,14 +1,15 @@
 -- SELECT : 데이터를 얻는 명령문
 /*
--- Customers 테이블의 모든 레코드와 모든 컬럼 조회
 SELECT 컬럼명리스트 FROM 테이블명;
 */
-
--- Customers 테이블의 모든 레코드를 CustomersName 열 조회
+-- Customers 테이블의 모든 레코드와 모든 컬럼 조회
 SELECT * FROM Customers;
 
--- Customers 테이블의 모든 레코드를 CustomerName Address 열 조회
+-- Customers 테이블의 모든 레코드를 CustomerName 열 조회
 SELECT CustomerName FROM Customers;
+
+-- Customers 테이블의 모든 레코드를 CustomerName, Address 열 조회
+SELECT CustomerName, Address FROM Customers;
 
 -- Employees 테이블의 모든 레코드(행)을 LastName, BirthDate 열 조회
 SELECT LastName, BirthDate FROM Employees;
@@ -27,7 +28,11 @@ SELECT * FROM Customers;
 SELECT
 	CustomerID,
     CustomerName,
-    Contact
+    ContactName,
+    Address,
+    City,
+    PostalCode,
+    Country
 FROM
 	Customers;
     
@@ -35,8 +40,12 @@ FROM
     SELECT * FROM Employees;
     
 -- SELECT 이후의 컬럼의 순서가 결과의 순서가 됨
-SELECT Customers, Address FROM Customers;
+SELECT CustomerName, Address FROM Customers;
 SELECT Address, CustomerName FROM Customers;
 
 -- Employees 테이블의 모든 레코드를 Fristname, LastName, BirthDate 컬럼으로 조회
-SELECT FirstName, LastName, BirthDate From Employees;
+SELECT FirstName, LastName, BirthDate FROM Employees;
+SELECT LastName, FirstName, BirthDate FROM Employees;
+
+
+
