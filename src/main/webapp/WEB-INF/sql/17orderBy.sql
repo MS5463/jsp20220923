@@ -37,3 +37,6 @@ SELECT * FROM Products ORDER BY Price DESC;
 
 -- 공급자를 나라, 도시순으로 조회
 SELECT * FROM Suppliers ORDER BY Country, City;
+
+-- 1번 카테고리에 있는 상품들을 상품명, 가격 조회(가격 내림차순으로)
+SELECT Products, Price FROM Products WHERE CategoryID = 1 ORDER BY Price DESC;
