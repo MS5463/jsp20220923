@@ -13,7 +13,7 @@
 	<h1>상품 보기</h1>
 	
 	<form action="" method="get">
-		상품번호 <input type="text" name="id">
+		상품번호 <input type="text" name="id"> 
 		<input type="submit" value="조회">
 	</form>
 	
@@ -21,7 +21,7 @@
 		<h3>상품번호를 조회해주세요.</h3>
 	</c:if>
 	
-	<c:if test="${not empty products}">			
+	<c:if test="${not empty products}">
 		<table class="table">
 			<thead>
 				<tr>
@@ -38,11 +38,23 @@
 						<td>
 							${product.price}
 						</td>
-					</tr>			
+					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 	</c:if>
+	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

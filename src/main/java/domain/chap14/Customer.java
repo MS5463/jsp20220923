@@ -6,6 +6,7 @@ public class Customer {
 	private String name;
 	private String city;
 	private String country;
+	private String contactName;
 	
 	public int getId() {
 		return id;
@@ -27,6 +28,9 @@ public class Customer {
 		return country;
 	}
 	
+	public String getContactName() {
+		return contactName;
+	}
 	
 	public void setId(int id) {
 		this.id = id;
@@ -46,5 +50,9 @@ public class Customer {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+	
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
 	}
 }
